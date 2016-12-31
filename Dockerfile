@@ -27,8 +27,10 @@ COPY data/conf $HOME/.drjava
 ADD data/algs4-data.zip .
 RUN unzip algs4-data.zip
 
-RUN chmod 775 /usr/local/bin/*
-
 WORKDIR /usr/src/app
 
-CMD ["drjava"]
+COPY data/entrypoint /usr/local/bin
+
+RUN chmod 775 /usr/local/bin/*
+
+CMD ['entrypoint']

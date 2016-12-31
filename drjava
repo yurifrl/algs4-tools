@@ -8,4 +8,4 @@ docker run -d \
   -v $(pwd):/usr/src/app \
   -e DISPLAY=unix$DISPLAY \
   --name drjava \
-  yurifl/drjava
+  yurifl/algs4-tools drjava

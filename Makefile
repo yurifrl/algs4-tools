@@ -1,3 +1,3 @@
 all:
 	docker-compose build
-	docker push yurifl/drjava:latest
+	docker push yurifl/algs4-tools:latest
