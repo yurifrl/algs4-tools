@@ -33,4 +33,4 @@ COPY data/entrypoint /usr/local/bin
 
 RUN chmod 775 /usr/local/bin/*
 
-CMD ['entrypoint']
+CMD ['/usr/local/bin/entrypoint']
